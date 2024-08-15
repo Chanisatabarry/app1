@@ -3,7 +3,7 @@ import React from 'react';
 export default function Calculator2 (){
     const n1 = 20
     const n2 = 4
-    const calculator = (op) => {
+    const calculate = (op) => {
         let c = `${n1} ${op} ${n2}`  //Alt 96
         let r = eval(c)
         alert(`${c} = ${r}`)
@@ -11,10 +11,10 @@ export default function Calculator2 (){
     return(
         <div style={{textAlign:'center',marginTop:20}}>
             <span>{n1}</span>&nbsp;
-            <button onClick={() => calculator('+')}>+</button>&nbsp;
-            <button onClick={() => calculator('-')}>-</button>&nbsp;
-            <button onClick={() => calculator('*')}>*</button>&nbsp;
-            <button onClick={() => calculator('/')}>/</button>&nbsp;
+            <button onClick={() => calculate('+')}>+</button>&nbsp;
+            <button onClick={() => calculate('-')}>-</button>&nbsp;
+            <button onClick={() => calculate('*')}>*</button>&nbsp;
+            <button onClick={() => calculate('/')}>/</button>&nbsp;
             <span>{n2}</span>
         </div>
         )
