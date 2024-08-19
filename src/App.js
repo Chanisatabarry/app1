@@ -1,6 +1,5 @@
 import React from 'react'
-import Calculator2 from './calculator';
-
+import RefsFunc from './refs-func';
 export default function App(){
-  return <Calculator2/>
+  return<RefsFunc/>
  }
